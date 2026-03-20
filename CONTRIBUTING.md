@@ -1,4 +1,10 @@
-# Contributing to Sable
+# Contributing to Porcelain
+
+This is mostly a personal project but if you make a pr I'll give it a look.
+
+However! down below is the contribution notice from Sable, if you somehow get here without looking at Sable you should consider giving that a far bigger look.
+
+# Contributing Upstream
 
 First off, thanks for taking the time to contribute! ❤️
 

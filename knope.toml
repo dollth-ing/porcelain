@@ -58,8 +58,8 @@ help_text = "Create a new change file to be included in the next release"
 type = "CreateChangeFile"
 
 [github]
-owner = "SableClient"
-repo = "Sable"
+owner = "dollth-ing"
+repo = "porcelain"
 
 [release_notes]
 # The <!-- commit:$commit_hash --> marker is used by prepare-release.yml

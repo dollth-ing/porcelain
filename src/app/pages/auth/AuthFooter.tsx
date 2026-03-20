@@ -4,13 +4,13 @@ import * as css from './styles.css';
 export function AuthFooter() {
   return (
     <Box className={css.AuthFooter} justifyContent="Center" gap="400" wrap="Wrap">
-      <Text as="a" size="T300" href="https://app.sable.moe" target="_blank" rel="noreferrer">
+      <Text as="a" size="T300" href="https://porcelain.dollth.ing" target="_blank" rel="noreferrer">
         About
       </Text>
       <Text
         as="a"
         size="T300"
-        href="https://github.com/SableClient/Sable"
+        href="https://github.com/dollth-ing/porcelain"
         target="_blank"
         rel="noreferrer"
       >

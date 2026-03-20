@@ -14,12 +14,12 @@ export function WelcomePage() {
         <PageHeroSection>
           <PageHero
             icon={<img width="70" height="70" src={CinnySVG} alt="Cinny Logo" />}
-            title="Welcome to Sable"
+            title="Welcome to Porcelain"
             subTitle={
               <span>
                 An almost stable Matrix client.{' '}
                 <a
-                  href="https://github.com/SableClient/Sable"
+                  href="https://github.com/dollth-ing/porcelain"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
@@ -32,7 +32,7 @@ export function WelcomePage() {
               <Box grow="Yes" style={{ maxWidth: toRem(300) }} direction="Column" gap="300">
                 <Button
                   as="a"
-                  href="https://github.com/SableClient/Sable"
+                  href="https://github.com/dollth-ing/porcelain"
                   target="_blank"
                   rel="noreferrer noopener"
                   before={<Icon size="200" src={Icons.Code} />}

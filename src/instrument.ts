@@ -74,7 +74,7 @@ if (dsn && sentryEnabled) {
     // Control which URLs get distributed tracing headers
     tracePropagationTargets: [
       'localhost',
-      /^https:\/\/[^/]*\.sable\.chat/,
+      /^https:\/\/[^/]*\.dollth\.ing/,
       // Add your Matrix homeserver domains here if needed
     ],
 
@@ -276,7 +276,7 @@ if (dsn && sentryEnabled) {
   // Expose Sentry globally for debugging and console testing
   // Set app-wide attributes on the global scope so they appear on all events and logs
   Sentry.getGlobalScope().setAttributes({
-    'app.name': 'sable',
+    'app.name': 'porcelain',
     'app.version': release ?? 'unknown',
   });
 

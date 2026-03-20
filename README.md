@@ -1,27 +1,26 @@
-# Sable
+# Porcelain
 
-A Matrix client built to enhance the user experience with quality-of-life features, cosmetics, utilities, and sheer usability. See the [changelog](https://github.com/SableClient/Sable/blob/dev/CHANGELOG.md).
+A Matrix client built to enhance the user experience of me and me in particular.
 
-Soon to be replaced desktop apps can be downloaded [here](https://github.com/7w1/sable/releases/tag/1.0.0). They auto-update by pulling the website.
+Im a bit new to typescript so do forgive me if any changes I make are shit.
 
-Join our matrix space [here](https://matrix.to/#/#sable:sable.moe) to discuss features, issues, or meowing.
+Join my matrix space [here](https://matrix.to/#/#porcelain:dollth.ing) to discuss features/issues or ask questions.
 
-Forked from [Cinny](https://github.com/cinnyapp/cinny/).
+Forked from [Sable](https://github.com/731/sable), which is forked from [Cinny](https://github.com/cinnyapp/cinny/).
 
 ## Getting started
-The web app is available at [app.sable.moe](https://app.sable.moe/) and gets updated on frequently, as soon as a feature is deemed stable.
+I server a development version at [porcelain.dollth.ing](https://porcelain.dollth.ing) for testing if you wish to check it out, please don't use this as your main client I don't have the best server
 
-You can also download our desktop app for windows and linux from [releases](https://github.com/SableClient/Sable/releases/latest).
+Otherwise I reccomend hosting yourself if you wish to use the added features which you can see options for below <3
 
 ## Self-hosting
 You have a few options for self hosting, you can:
 1. Run the prebuilt docker container.
-2. Deploy on a site like GitLab Pages. Jae has a [guide here](https://docs.j4.lc/Tutorials/Deploying-Sable-on-GitLab-Pages).
-3. Build it yourself.
+2. Build it yourself.
 
 ### Docker
 
-Prebuilt images are published to `ghcr.io/sableclient/sable`.
+Prebuilt images are published to `ghcr.io/dollth-ing/porcelain`.
 
 - `latest` tracks the current `dev` branch image.
 - `X.Y.Z` tags are versioned releases.
@@ -31,18 +30,18 @@ Prebuilt images are published to `ghcr.io/sableclient/sable`.
 Run the latest image with:
 
 ```sh
-docker run --rm -p 8080:8080 ghcr.io/sableclient/sable:latest
+docker run --rm -p 8067:8080 ghcr.io/dollth-ing/porcelain:latest
 ```
 
-Then open `http://localhost:8080`.
+Then open `http://localhost:8067`.
 
 If you want to override the bundled [`config.json`](config.json), mount your own
 file at `/app/config.json`:
 
 ```yaml
 services:
-  sable:
-    image: ghcr.io/sableclient/sable:latest
+  porcelain:
+    image: ghcr.io/dollth-ing/porcelain:latest
     ports:
       - '8080:8080'
     volumes:
@@ -51,7 +50,7 @@ services:
 
 ### Build it yourself
 
-To build and serve Sable yourself with nginx, clone this repo and build it:
+To build and serve Porcelain yourself with nginx, clone this repo and build it:
 
 ```sh
 pnpm i # Installs all dependencies
@@ -63,7 +62,7 @@ After that, you can copy the dist/ directory to your server and serve it.
 * In the [`config.json`](config.json), you can modify the default homeservers, feature rooms/spaces, toggle the account switcher, and toggle experimental simplified slilding sync support.
 
 * To deploy on subdirectory, you need to rebuild the app youself after updating the `base` path in [`build.config.ts`](build.config.ts).
-    * For example, if you want to deploy on `https://sable.moe/app`, then set `base: '/app'`.
+    * For example, if you want to deploy on `https://dollth.ing/app`, then set `base: '/app'`.
 
 ## Local development
 > [!TIP]

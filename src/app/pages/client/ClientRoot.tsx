@@ -63,7 +63,7 @@ function ClientRootLoading() {
     <SplashScreen>
       <Box direction="Column" grow="Yes" alignItems="Center" justifyContent="Center" gap="400">
         <Spinner variant="Secondary" size="600" />
-        <Text>Petting cats</Text>
+        <Text>Firing up!</Text>
       </Box>
     </SplashScreen>
   );

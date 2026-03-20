@@ -34,7 +34,19 @@ export function PronounEditor({ title, current, onSave, disabled }: PronounEdito
       title={title}
       // let people specify multiple sets of pronouns for different languages
       // the input is a comma separated list of pronoun sets, each set can have an optional language tag (e.g. "en:they/them, de:sie/ihr")
-      description="Separate sets with commas (e.g. 'en:they/them, en:it/its, de:sie/ihr')."
+      description={
+        <text>
+          Separate sets with commas, add language tags according to{' '}
+          <a
+            href="https://en.wikipedia.org/wiki/IETF_language_tag"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IETF
+          </a>{' '}
+          (e.g. 'en:they/them, de:sie/ihr')
+        </text>
+      }
       after={
         <Input
           value={val}

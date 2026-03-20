@@ -6,7 +6,7 @@ export function ConfigConfigLoading() {
     <SplashScreen>
       <Box grow="Yes" direction="Column" gap="400" alignItems="Center" justifyContent="Center">
         <Spinner variant="Secondary" size="600" />
-        <Text>Petting cats</Text>
+        <Text>Firing up!</Text>
       </Box>
     </SplashScreen>
   );

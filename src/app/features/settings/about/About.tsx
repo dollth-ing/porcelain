@@ -181,7 +181,7 @@ export function About({ requestClose }: Readonly<AboutProps>) {
                 <Box direction="Column" gap="300">
                   <Box direction="Column" gap="100">
                     <Box gap="100" alignItems="End">
-                      <Text size="H3">Sable</Text>
+                      <Text size="H3">Porcelain</Text>
                       <Text size="T200">{`v${APP_VERSION}${devLabel}${buildLabel}`}</Text>
                     </Box>
                     <Text>An almost stable Matrix client.</Text>
@@ -190,7 +190,7 @@ export function About({ requestClose }: Readonly<AboutProps>) {
                   <Box gap="200" wrap="Wrap">
                     <Button
                       as="a"
-                      href="https://github.com/SableClient/Sable"
+                      href="https://github.com/dollth-ing/porcelain"
                       rel="noreferrer noopener"
                       target="_blank"
                       variant="Secondary"
@@ -200,19 +200,6 @@ export function About({ requestClose }: Readonly<AboutProps>) {
                       before={<Icon src={Icons.Code} size="100" filled />}
                     >
                       <Text size="B300">Source Code</Text>
-                    </Button>
-                    <Button
-                      as="a"
-                      href="https://github.com/SableClient/Sable/pulls"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                      variant="Critical"
-                      fill="Soft"
-                      size="300"
-                      radii="300"
-                      before={<Icon src={Icons.Heart} size="100" filled />}
-                    >
-                      <Text size="B300">Support</Text>
                     </Button>
                   </Box>
                 </Box>

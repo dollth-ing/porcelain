@@ -159,6 +159,23 @@ function Privacy() {
   );
 }
 
+function LayoutTweaks() {
+  const [swapNavBar, setNavBar] = useSetting(settingsAtom, 'swapNavBar');
+
+  return (
+    <Box direction="Column" gap="100">
+      <Text size="L400">Layout</Text>
+      <SequenceCard className={SequenceCardStyle} variant="SurfaceVariant" direction="Column">
+        <SettingTile
+          title="Swap Navbar Side"
+          description="Swap the side the navbar appears on."
+          after={<Switch variant="Primary" value={swapNavBar} onChange={setNavBar} />}
+        />
+      </SequenceCard>
+    </Box>
+  );
+}
+
 function IdentityCosmetics() {
   const [legacyUsernameColor, setLegacyUsernameColor] = useSetting(
     settingsAtom,
@@ -268,6 +285,7 @@ export function Cosmetics({ requestClose }: CosmeticsProps) {
               <Appearance />
               <IdentityCosmetics />
               <JumboEmoji />
+              <LayoutTweaks />
               <Privacy />
             </Box>
           </PageContent>

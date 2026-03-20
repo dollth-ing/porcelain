@@ -103,6 +103,9 @@ export interface Settings {
 
   // furry stuff
   renderAnimals: boolean;
+
+  // Layout!
+  swapNavBar: boolean;
 }
 
 const defaultSettings: Settings = {
@@ -187,6 +190,9 @@ const defaultSettings: Settings = {
 
   // furry stuff
   renderAnimals: true,
+
+  // Layout!
+  swapNavBar: false,
 };
 
 export const getSettings = () => {
