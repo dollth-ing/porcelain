@@ -6,7 +6,7 @@ Im a bit new to typescript so do forgive me if any changes I make are shit.
 
 Join my matrix space [here](https://matrix.to/#/#porcelain:dollth.ing) to discuss features/issues or ask questions.
 
-Forked from [Sable](https://github.com/731/sable), which is forked from [Cinny](https://github.com/cinnyapp/cinny/).
+Forked from [Sable](https://github.com/sableapp/sable), which is forked from [Cinny](https://github.com/cinnyapp/cinny/).
 
 ## Getting started
 I server a development version at [porcelain.dollth.ing](https://porcelain.dollth.ing) for testing if you wish to check it out, please don't use this as your main client I don't have the best server
